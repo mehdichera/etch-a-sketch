@@ -27,6 +27,8 @@
        button.addEventListener('click',restart);
     };
     function restart(){
+      let squares = document.querySelectorAll('.square');
+      squares.forEach(e => e.remove());
       let numsquares = prompt("choose the number of squares per side(100 or less):", );
       e(numsquares);
     }
