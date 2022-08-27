@@ -1,23 +1,42 @@
-body {
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px; 
+}
+.mainContainer {
  display: flex;
+ flex-direction: column;
  align-items: center;
  justify-content: center;
- margin: 1fr;
+ margin-top: 4%;
+ 
 }
-#container {
+.container {
     display: grid;
-    border: 2px black solid;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
     height: 500px;
     width: 500px;
 }
-.color {
-    background-color: grey;
-}
-.btn {
+
+#btn {
     background-color: black;
     color: white;
     font-size: medium;
-    padding: 10px;
+    padding: 10px 25px;
     border: solid;
     border-radius: 10px;
+    margin-top: 20px;
+}
+input {
+    padding: 30%; 
+    border-radius: 50px;
+    background-color: black;
+}
+.toolspanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }

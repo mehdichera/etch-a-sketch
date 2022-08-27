@@ -6,34 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>etch-a-sketch</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./javascript.js" defer></script>
 </head>
 <body>
-    <button class ="btn">restart</button>
-    <div id="container"></div>
+  <div class="toolspanel">
+    <input type="color" id="colorpicker" value="#000000">
+    <button class="solid" id="btn">Solid</button>
+    <button class="rainbow" id="btn">Rainbow mode</button>
+    <button class="erazer" id="btn">Erazer</button>
+    <button class ="restart" id="btn">restart</button>
+    </div>
+  <div class="mainContainer">
+    <div class="container"></div>
+  </div>
 </body>
-<script>
-    function e (n){
-       let container = document.querySelector('div');
-       let  button =  document.querySelector('.btn');
-       for (let i=0 ; i<n*n ; i++) {
-           let square = document.createElement('div');
-           square.classList.add('square');
-           container.appendChild(square);
-           square.addEventListener('mouseenter', function changecolor(){
-               square.classList.add('color');
-             });
-           };
-       container.style.cssText =`grid-Template-columns: repeat(${n} , 1fr); , grid-Template-Rows : repeat(${n} , 1fr);`;
-       button.addEventListener('click',restart);
-    };
-    function restart(){
-      let squares = document.querySelectorAll('.square');
-      squares.forEach(e => e.remove());
-      let numsquares = prompt("choose the number of squares per side(100 or less):", );
-      e(numsquares);
-    }
-    e(16);
-
-
-   </script>
 </html>
