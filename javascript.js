@@ -14,7 +14,7 @@ function e (n){
     restartBtn.addEventListener('click',restart);
     erazerBtn.addEventListener('click',erazerFun);
     rainbowModeBtn.addEventListener('click',rainbowfun);
-    solidbtn.addEventListener('click',solidFun)
+    solidbtn.addEventListener('click',solidFun);
  };
  function restart(){
    let squares = document.querySelectorAll('.square');
@@ -49,6 +49,7 @@ function solidFun () {
     let squares =document.querySelectorAll('.square');
     squares.forEach((e)=>{
      e.addEventListener('mouseenter',chooseColor);
+     e.removeEventListener('mouseenter',changeColor);
  })
 }
 function chooseColor() {
