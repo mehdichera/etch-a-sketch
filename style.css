@@ -23,20 +23,24 @@ body{
     background-color: black;
     color: white;
     font-size: medium;
-    padding: 10px 25px;
+    width: 103px;
+    height: 44px;
     border: solid;
     border-radius: 10px;
-    margin-top: 20px;
 }
 input {
-    padding: 30%; 
-    border-radius: 50px;
-    background-color: black;
+   width: 85px;
+   height: 85px;
+   background-color: transparent;
+   border: none;
 }
 .toolspanel {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
+}
+#btn:hover {
+    background-color: rgb(31, 30, 30);
 }
